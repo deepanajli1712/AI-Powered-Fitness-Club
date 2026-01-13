@@ -231,7 +231,7 @@ function takeCommand(message){
     }
     else if(message.includes("homepage") || message.includes("home page") || message.includes("main page")){
         speak("opening homepage");
-        window.open("A-index.html","_self");
+        window.open("index.html","_self");
     }
     else if(message.includes("hello") || message.includes("hey")){
         speak("hello sir, what can i help you?");
@@ -265,4 +265,5 @@ function takeCommand(message){
 ai.addEventListener("click", () => {
     recognition.start();
     speakpage.style.display = "flex";
+
 });
